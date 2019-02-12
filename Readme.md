@@ -13,13 +13,14 @@ This repo serves as a boilerplate for react. A few main keys are:
 ```
     src
         - actions
+        - apis
         - components
         - consts
         - containers
         - reducers
         - sagas
         - stores
-        - utils
+        - utils                        
 ```
 
 ## Sample screen
