@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import cm from 'classnames';
 import LoaderHOC from '../../containers/LoaderHOC';
 import styles from './UserList.module.scss';
 
@@ -12,8 +13,8 @@ const UserList = (props) => {
         {users.map(r => (<li key={r.email}>
             <div className={styles.record}>
               <img src={r.picture.thumbnail}/>
-              <div className={styles.info}>
-                {r.name.first} {r.name.last} ({r.email})
+              <div className={cm(styles.info, styles.red)}>
+                {`${r.name.first} ${r.name.last} (${r.email})`}
               </div>
             </div>
           </li>))}
