@@ -1,0 +1,17 @@
+version: '3'
+services:
+  #################################
+  #           Webapp              #
+  #################################
+  webapp:
+    build:
+      context: ./
+    image: webapp-sample
+    ports:
+      - "3000:3000"
+    environment:
+      - "PORT:3000"
+    volumes:
+      - ./src:/app/src
+      - ./test:/app/test
+

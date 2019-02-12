@@ -1,0 +1,12 @@
+// actions
+const FETCH_SAMPLE = 'FETCH_SAMPLE';
+const FETCH_ERROR = 'FETCH_ERROR';
+const SAMPLE_LOADED = 'SAMPLE_LOADED';
+const SAMPLE_USER_API_HOST = 'https://api.randomuser.me';
+
+export {
+  FETCH_SAMPLE,
+  FETCH_ERROR,
+  SAMPLE_LOADED,
+  SAMPLE_USER_API_HOST,
+};

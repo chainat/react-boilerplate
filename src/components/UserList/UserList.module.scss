@@ -1,0 +1,26 @@
+div.randomUser {
+  h3 {
+    font-style: bold;
+  }
+  .record {
+    display: block;
+    padding: 10px;
+    position: relative;
+    .info {
+      position: absolute;
+      top: 35px;
+      left: 80px;
+    }
+  }
+
+  li {
+    color: blue;
+    list-style-type: none;
+  }
+  ul.user {
+    li {
+      font-weight: bold;
+    }
+  }
+
+}
