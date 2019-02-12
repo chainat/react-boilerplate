@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import LoaderHOC from '../../containers/Loader/LoaderHOC';
+import LoaderHOC from '../../containers/LoaderHOC';
 import styles from './UserList.module.scss';
 
 const UserList = (props) => {
@@ -26,4 +26,4 @@ UserList.propTypes = {
   users: PropTypes.array.isRequired,
 };
 
-export default UserList;
+export default LoaderHOC(UserList);
